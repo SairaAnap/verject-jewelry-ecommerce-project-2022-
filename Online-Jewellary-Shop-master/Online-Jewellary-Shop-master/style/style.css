@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  transition: 0.1s;
+  font-family: 'Athiti', sans-serif;
+  text-transform: capitalize;
+}
+body{
+  transition: 0.2s;
+}
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(198, 196, 196);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(224, 247, 224);
+}
+.loader{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;align-items: center;
+}.loader img{
+  max-width: 300px;
+}
+
+.navbar {
+  max-width: 100%;
+  font-size: 19px;
+
+}
+
+.navbar .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 11px;
+  gap: 6rem;
+  background-color: rgb(224, 247, 224);
+  align-items: center;
+}
+
+.navbar .container .logo {
+  margin: 10px;
+
+}
+
+.navbar .container ul li {
+  list-style-type: none;
+  display: inline-flex;
+  margin: 10px;
+
+
+
+
+}
+
+.navbar .container ul li a {
+  text-decoration: none;
+  color: rgb(135, 133, 133);
+
+}
+
+.navbar .container input[type=search] {
+  width: 100%;
+  height: 4.5vh;
+  border: 1px solid lightgray;
+  margin: 10px;
+  position: relative;
+  padding: 10px 30px;
+  font-size: 15px;
+  text-transform: lowercase;
+}
+
+.icon {
+  position: absolute;
+  top: 1.5rem;
+  left: 49rem;
+  /* padding: 5px; */
+
+}
+
+
+
+::placeholder {
+
+  border: none;
+
+}
+
+.navbar .container input[type=search]:focus {
+
+  outline: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+
+}
+
+
+
+.navbar .container .accountdiv button {
+  width: 90px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 3.5px;
+  font-size: 15px;
+
+}
+
+.navbar .container .accountdiv button:hover {
+  background-color: rgb(254, 253, 253);
+  color: black;
+}
+
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(135, 133, 133);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* navbar end */
+
+/* dropdown */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: rgb(135, 133, 133);
+  padding: 14px 16px;
+  margin: 0;
+  background-color: white;
+}
+
+.navbar .anchor:hover,
+.dropdown:hover .dropbtn {
+  background-color: white;
+  border-bottom: 1px solid;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-image: linear-gradient(rgb(247, 249, 247), rgb(244, 247, 247), rgb(202, 250, 219));
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: rgb(136, 134, 134);
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+
+
+/* baaner section */
+.home {
+  max-width: 100%;
+}
+
+.home .banner {
+  background-image: url(../images/ROBERTOCOIN__EMERALD-SUITE_10-12-2016_4-copy.jpg);
+
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  position: relative;
+  margin: 25px;
+}
+
+.home .banner .banner-content {
+  text-align: right;
+  padding: 10pc 50px 0px 30px;
+  text-transform: capitalize;
+  font-weight: 300;
+
+}
+
+/* coolection */
+.collection {
+  max-width: 100%;
+  margin: 20px 0px 0px 0px;
+  padding: 20px;
+
+}
+
+.collection .title {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 30px;
+}
+
+.collection .items {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  gap: 50px;
+
+
+
+}
+
+.collection .items .jewel {
+  /* max-height: 50vh; */
+  width: 50%;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 30px;
+
+}
+
+.collection .items .jewel .box button {
+  display: block;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(8, 11, 10);
+  width: 100%;
+  height: 2rem;
+  border-radius: 2px;
+  text-transform: capitalize;
+  color: aliceblue;
+
+
+}
+
+.collection .items .jewel .box button:hover {
+  background-color: rgb(224, 247, 224);
+  color: black;
+  font: caption;
+  outline: 1px solid rgb(231, 231, 231);
+
+}
+
+.collection .items .jewel .box a {
+  text-decoration: none;
+
+
+
+}
+
+.collection .items .jewel .box img {
+  overflow: hidden;
+  height: 150px;
+  width: 200px;
+}
+
+/* about us section */
+
+.aboutus .right {
+  float: right;
+  width: 50%;
+  padding: 20px;
+
+
+}
+
+.aboutus .left {
+  float: left;
+  /* height: 40vh; */
+  width: 50%;
+  padding: 20px;
+  text-transform: capitalize;
+
+}
+
+.aboutus .left .content {
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.aboutus .left .content h1 {
+  margin: 10px;
+}
+
+.aboutus .left .content article,
+.readmore p {
+  color: grey;
+  margin: 10px;
+}
+
+
+.aboutus .left .readmore button {
+  width: 100px;
+  height: 4.5vh;
+  margin: 10px 10px 0px 10px;
+  border: none;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 3.5px;
+  font-size: 15px;
+
+}
+
+.aboutus .left .readmore button:hover {
+  background-color: rgb(254, 253, 253);
+  color: black;
+}
+
+.aboutus .left iframe {
+  outline: none;
+}
+
+/* fine jewel  section*/
+.fine-jewelary .right {
+  float: right;
+  width: 50%;
+  padding: 20px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.fine-jewelary .right :hover {
+  opacity: 0.8;
+  transform: scale(1.1, 1.1);
+
+}
+
+.fine-jewelary .left {
+  float: left;
+  width: 50%;
+  height: 500px;
+
+  overflow: hidden;
+}
+
+.fine-jewelary .left .content {
+  margin: 100px 0px 0px 10px;
+  font-size: 16px;
+  color: grey;
+  padding: 20px;
+
+}
+
+.fine-jewelary .right2 {
+  float: right;
+  margin-top: 10%;
+  width: 50%;
+  height: 500px;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 16px;
+  color: grey;
+
+
+}
+
+.fine-jewelary .left2 {
+
+  width: 50%;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.fine-jewelary .left2 :hover {
+
+  opacity: 0.9;
+  transform: scale(1.1, 1.1);
+
+
+}
+/* fine jwelaru end */
+
+
+
+/* blog */
+
+/* bolg end */
+
+
+
+/* footer */
+.footer-distributed {
+  background-color: rgb(224, 247, 224);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  text-align: left;
+  padding: 50px 60px 40px;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  float: left;
+  width: 50%;
+  height: 36vh;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons {
+  margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  float: right;
+  width: 50%;
+}
+
+.footer-distributed .footer-right p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 42px 0 0;
+  color: grey;
+
+}
+
+/* The contact form */
+
+.footer-distributed form {
+  display: inline-block;
+}
+
+.footer-links {
+  color: grey;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea {
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  width: 400px;
+  padding: 18px;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea :focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.footer-distributed form input {
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.footer-distributed form textarea {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-distributed form button {
+  border-radius: 3px;
+  background-color: #0a0b0b;
+  color: #ffffff;
+  border: 0;
+  padding: 5px 20px;
+
+}
+
+.footer-distributed form button:hover {
+  background-color: white;
+  color: #0a0b0b;
+  font-size: 15px;
+  font: bolder;
+}
+
+
+
+
+footer .Createdby{
+float: left;
+width: 100%;
+color: grey;
+
+}
+
+
+/* footer end */
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width:1250px) {
+
+  .body{
+font-size: 18px;
+  }
+.navbar .container{
+  gap:0px;
+}
+  .collection .items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+  }
+
+  .collection .items .jewel {
+    max-height: fit-content;
+    width: 100%;
+
+  }
+
+  .icon {
+
+  display: none;
+  
+  }
+
+  .navbar .container input[type=search] {
+    width: 100%;
+    height: 5.5vh;
+    position: relative;
+
+  }
+
+  .navbar .container {
+    flex-wrap: wrap;
+    padding: 5px 11px;
+    gap: 0px;
+
+  }
+
+  /* banner */
+  .home .banner{
+    display: none;
+  }
+ 
+
+  /* about us */
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+  }
+
+  .aboutus .right .shot video {
+    width: 100%;
+    height: 70vh;
+  }
+
+  /* fine jwel */
+
+  .fine-jewelary .right {
+    float: left;
+
+
+  }
+
+  .fine-jewelary .right img {
+    width: 100%;
+  }
+
+
+  .fine-jewelary .right2 {
+    float: left;
+
+
+  }
+
+  .fine-jewelary .left2 img {
+    width: 100%;
+  }
+
+  .aboutus .left .content {
+    margin-top: 0px;
+    padding: 0px;
+}
+
+}
+
+@media (max-width: 1000px) {
+  .body{
+    font-size: 18px;
+      }
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-company-name {
+    font-size: 12px;
+  }
+
+  .footer-distributed form input,
+  .footer-distributed form textarea {
+    width: 250px;
+  }
+
+  .footer-distributed form button {
+    padding: 10px 35px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .body{
+    /* font-size: 18px; */
+      }
+  .footer-distributed {
+    padding: 30px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-distributed .footer-left {
+    margin-bottom: 40px;
+  }
+
+  .footer-distributed form {
+    margin-top: 50px;
+  }
+
+
+  .footer-distributed form button {
+    float: none;
+  }
+}

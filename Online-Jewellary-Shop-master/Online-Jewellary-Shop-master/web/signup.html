@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>verjet | signup</title>
+  <link rel="stylesheet" href="../style/signup.css">
+</head>
+
+<body>
+  <div class="form">
+    <div class="button-div">
+      <a href="../web/login.html"><button>login</button></a>
+      <a href="../web/signup.html"><button>Signup</button></a>
+    </div>
+    <form name="myForm" onsubmit="return validateform()">
+      <div class="input-div">
+        <div class="input-div">
+          <input name="name" type="text" placeholder="Full Name" id="fname" autocomplete="off"><span id="e1"></span>
+        </div>
+        <div class="input-div">
+          <input name="email" type="email" placeholder="Email" id="email"><span id="e2"></span>
+        </div>
+        <div class="input-div">
+          <input name="number" type="number" placeholder="Mobile Number" id="mobileNumber"><span id="e3"></span>
+        </div>
+        <div class="input-div">
+          <input name="password" type="password" placeholder="Enter password" id="pass"> <span id="e4"></span>
+        </div>
+        <div class="input-div">
+          <input name="confirmpassword" type="password" placeholder="confirm password" id="Cpass"><span id="e5"></span>
+        </div>
+      </div>
+      <button class="submitbutton" value="submit">submit</button>
+    </form>
+  </div>
+
+  <script>
+    function validateform() {
+      var name = document.myForm.name.value;
+      var email = document.myForm.email.value;
+      var number = document.myForm.number.value;
+      var pass = document.myForm.password.value;
+      var Cpass = document.myForm.confirmpassword.value;
+
+      if (name == null || name == "") {
+        document.getElementById("e1").innerHTML = "*";
+        document.getElementById("e1").style.color = "red";
+        document.getElementById("fname").style.borderBottom = "2px solid red";
+
+      } else if (name.value < 3) {
+        document.getElementById("e1").innerHTML = "altleast minimum letter 3";
+        document.getElementById("e1").style.color = "red";
+        document.getElementById("fname").style.borderBottom = "2px solid red";
+
+      } else {
+        document.getElementById("e1").innerHTML = "";
+        document.getElementById("name").style.border = "none";
+      }
+
+      if (email == "" || email == null) {
+        document.getElementById("e2").innerHTML = "*";
+        document.getElementById("e2").style.color = "red";
+        document.getElementById("email").style.borderBottom = "2px solid red";
+
+      } else {
+        document.getElementById("e2").innerHTML = "";
+        document.getElementById("email").style.borderBottom = "2px solid red";
+
+      }
+
+      return false
+
+    }
+  </script>
+</body>
+
+</html>

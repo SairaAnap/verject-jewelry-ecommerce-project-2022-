@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verjet || blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+    <div>
+        <header>
+            <!-- navbar -->
+            <div class="navbar">
+                <div>
+                    <div class="container">
+                        <div class="logo">
+                            <img src="../images/Verjet.png" alt="logo" height="40px" width="200px">
+                        </div>
+                        <div>
+                            <div class="container">
+                                <input type="search" placeholder="Search for products and brands and more">
+                                <div class="icon"><i class="fa-solid fa-magnifying-glass"></i> </div>
+                            </div>
+
+
+
+                            <div class="navbar">
+                                <a class="anchor" href="../web/verjet.html " target="_self">Home</a>
+                                <a class="anchor" href="../web/About.html" target="_self">About</a>
+                                <a class="anchor" href="../web/fine jwelary.htm" target="_self">Fine jewelrey</a>
+                                <a class="anchor" href="../web/blog.html" target="_self">blog</a>
+
+                                <div class="dropdown">
+                                    <button class="dropbtn">jewelrey collection</button>
+                                    <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+
+                                        <div class="row">
+                                            <div class="column">
+
+                                                <a href="#">Diamond</a>
+                                                <a href="#">emrald</a>
+                                                <a href="#">Opal</a>
+                                            </div>
+                                            <div class="column">
+
+                                                <a href="#">Diamond neck-piece </a>
+                                                <a href="#">Diamond Ring</a>
+                                                <a href="#">Diamond braclet</a>
+                                            </div>
+                                            <div class="column">
+
+                                                <a href="#"> Emrald neck-piece </a>
+                                                <a href="#">Emrald Ring</a>
+                                                <a href="#">Emrald braclet</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accountdiv">
+                            <a href="../web/login.html"><button>login</button> </a>
+                            <a href="../web/signup.html"><button>Signup</button> </a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--navbar end div-->
+        </header>
+
+        <div>
+            <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div id="hero">
+        <div class="navbar">
+            <img src="../images/BG1.jpg" class="logo">
+            <div class="user">
+                <button type="button">Explore</button>
+                <img src="../images/BG3.jpg" class="user">
+            </div>
+
+        </div>
+        <div class="container">
+
+            <div class="info">
+                <h2>DISCOVER</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vitae.</p>
+                <input type="text" placeholder="search">
+            </div>
+        </div>
+
+        <div class="slider">
+            <span id="prev"> <=</span>
+            <div class="preview">
+                <img src="../images/BG2.jpg" class="active thumbnail">
+                <img src="../images/emrald-earing.jfif" class="thumbnail">
+                <img src="../images/emrald.ring.jfif" class="thumbnail">
+                <img src="../images/close-up-of-necklace.jpg" class="thumbnail">
+                <img src="../images/emral-tops.jfif" class="thumbnail">
+            </div>
+            <span id="next">=></span>
+        </div>
+    </div>
+
+    <script>
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var hero = document.getElementById("hero");
+
+        var backgroundImg = new Array(
+            "../images/BG2.jpg",
+            "../images/emrald-earing.jfif",
+            "../images/emrald.ring.jfif",
+            "../images/close-up-of-necklace.jpg",
+            "../images/emral-tops.jfif",
+        );
+        let i = 0;
+        next.onclick = function () {
+            if (i < 4) {
+                hero.style.backgroundImage = 'url(" ' + backgroundImg[i + 1] + '")';
+                thumbnail[i+1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i++;
+            }
+        }
+
+        prev.onclick = function () {
+
+            if (i > 0) {
+                hero.style.backgroundImage = 'url(" ' + backgroundImg[i + 1] + '")';
+                thumbnail[i-1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i--;
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
+        </div>
+
+    </div>
+    
+</body>
+</html>

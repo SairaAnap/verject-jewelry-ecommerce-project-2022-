@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verjet | login</title>
+    <link rel="stylesheet" href="../style/login.css">
+</head>
+
+<body>
+
+    <div class="form">
+
+
+        <div class="button-div">
+            <a href="../web/login.html"><button>login</button> </a>
+            <a href="../web/signup.html"><button>Signup</button> </a>
+        </div>
+
+        <form name="myForm" onsubmit="return validateform()">
+            <div class="input-div">
+                <div class="input-div"><input name="email" type="email" placeholder="Email" id="email"><span
+                        id="e2"></span><span></span></div>
+                <div class="input-div"> <input name="password" type="password" placeholder="Enter password" id="pass">
+                    <span id="e4"></span>
+                </div>
+            </div>
+
+
+            <button class="submitbutton" onsubmit="">submit</button>
+
+
+            <div class="anchor-div">
+                <p><a href="">forgot password?</a></p>
+            </div>
+            </from>
+    </div>
+
+    <script>
+        function validateform() {
+
+            var email = document.myForm.email.value;
+
+            var pass = document.myForm.password.value;
+
+
+
+            if (email == null || email == "") {
+                document.getElementById("e2").innerHTML = "*";
+
+                document.getElementById("e2").style.color = "red";
+
+                document.getElementById("email").style.borderBottom = "2px solid red";
+
+                return false;
+
+
+            } else
+                if (pass == null || pass == "") {
+
+                    document.getElementById("e4").innerHTML = "*";
+
+                    document.getElementById("e4").style.color = "red";
+
+                    document.getElementById("pass").style.borderBottom = "2px solid red";
+                    return false;
+
+                } else
+
+                    if (pass.length < 8 || pass == "") {
+                        document.getElementById("e4").innerHTML = "password  must be atleast of 8 charecter";
+
+                        document.getElementById("e4").style.color = "red";
+
+                        document.getElementById("pass").style.borderBottom = "2px solid red";
+
+                        return false;
+                    }
+
+
+                    else
+                        if (pass == true || pass > 8) {
+                            alert("login successful")
+                        }
+                        return true
+
+        }
+    </script>
+</body>
+
+</html>
