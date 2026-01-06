@@ -1,0 +1,1 @@
+# verject-jewelry-ecommerce-project-2022-
